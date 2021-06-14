@@ -4,9 +4,10 @@ import pyowm
 import time
 import json
 import os
-
+'''
 with open('./telegram_token.json', encoding = 'UTF-8') as file:
     telegram_token = json.load(file)
+'''
 
 owm = pyowm.OWM('37656453f70fc458f65d30166b29610d')
 bot = telebot.TeleBot(str(heroku_token))
