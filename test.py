@@ -1,8 +1,7 @@
 from romb import *
 import json
-
-with open('./telegram_token.json', encoding = 'UTF-8') as file:
-    telegram_token = json.load(file)
+import os
+heroku_token = os.environ.get('BOT_TOKEN')
 
 v = int(input('Введите сторону ромба: '))
 if (v > 0):
@@ -11,5 +10,3 @@ if (v > 0):
         print(*s[i], sep = '')
 else:
     print ('Введите число больше нуля!')
-
-print(telegram_token['id'])
