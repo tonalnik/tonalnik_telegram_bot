@@ -52,7 +52,7 @@ def send_text(message):
     elif text == 'гуль' or text == 'deadinside' or text == '1000-7' or text == 'ghoul' or text == 'дединсайд' or text == 'zxc' or text == 'zxcursed':
         bot.send_message(message.chat.id, "???")
         time.sleep(1)
-        bot.send_photo(message.chat.id, 'https://sun9-14.userapi.com/impg/lziS0NmpK9fsXAmxMdWcO-8Ck2JeVpWZGKxKfg/zbx9cSJsRhU.jpg?size=480x320&quality=96&sign=569385192284a463a657308d66e8a5a1&type=album');
+        bot.send_photo(message.chat.id, 'https://sun9-14.userapi.com/impg/lziS0NmpK9fsXAmxMdWcO-8Ck2JeVpWZGKxKfg/zbx9cSJsRhU.jpg?size=480x320&quality=96&sign=569385192284a463a657308d66e8a5a1&type=album')
         time.sleep(2)
         k = 0
         for i in range(1000, 0, -7):
@@ -67,6 +67,22 @@ def send_text(message):
     elif text == 'ромб' or text == 'romb':
         bot.send_message(message.chat.id, 'Введите сторону ромба: ')
         bot.register_next_step_handler(message, teleromb)
+
+    elif text == 'доброе утро, данил' or text == 'доброе утро данил':
+        bot.send_message(message.chat.id, "Доброе утро, Аня!")
+        bot.send_photo(message.chat.id, 'https://i.ytimg.com/vi/m_P6f8SloKA/maxresdefault.jpg')
+
+    elif text == 'добрый день, данил' or text == 'добрый день данил':
+        bot.send_message(message.chat.id, "Добрый день, Аня!")
+        bot.send_photo(message.chat.id, 'http://risovach.ru/upload/2018/12/mem/kostya-pomylsya_195111881_orig_.jpg')
+
+    elif text == 'добрый вечер, данил' or text == 'добрый вечер данил':
+        bot.send_message(message.chat.id, "Добрый вечер, Аня!")
+        bot.send_photo(message.chat.id, 'https://smeyakaka.ru/img/31931.jpg')
+
+    elif text == 'спокойной ночи, данил' or text == 'спокойной ночи данил':
+        bot.send_message(message.chat.id, "Спокойной ночи, Аня!")
+        bot.send_photo(message.chat.id, 'https://pbs.twimg.com/media/D7k6y5gXsAEKoIW.jpg')
 
     elif text == '/help' or text == "help" or text == "помощь":
         bot.send_message(message.chat.id, 

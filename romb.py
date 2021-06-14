@@ -28,10 +28,8 @@ def output(s, v):
         for j in range (v * 2 - 1):
             print(s[i][j], end = '')
         print()
-'''
+
 v = int(input('Введите сторону ромба: '))
 if (v > 0):
     s = romb(v)
     output(s, v)
-else:
-'''
