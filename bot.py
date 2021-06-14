@@ -3,6 +3,7 @@ import telebot
 import pyowm
 import time
 import json
+import os
 
 with open('./telegram_token.json', encoding = 'UTF-8') as file:
     telegram_token = json.load(file)
@@ -10,6 +11,7 @@ with open('./telegram_token.json', encoding = 'UTF-8') as file:
 owm = pyowm.OWM('37656453f70fc458f65d30166b29610d')
 bot = telebot.TeleBot(telegram_token['id'])
 mgr = owm.weather_manager()
+token = os.environ.get('BOT_TOKEN')
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
