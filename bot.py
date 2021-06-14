@@ -57,7 +57,7 @@ def send_text(message):
         k = 0
         for i in range(1000, 0, -7):
             if i > 40:
-                if k != 0 and k % 3 == 0:
+                if k != 0 and k % 5 == 0:
                     k += 1
                     continue
                 k += 1
