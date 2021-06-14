@@ -9,9 +9,9 @@ with open('./telegram_token.json', encoding = 'UTF-8') as file:
     telegram_token = json.load(file)
 
 owm = pyowm.OWM('37656453f70fc458f65d30166b29610d')
-bot = telebot.TeleBot(telegram_token['id'])
+bot = telebot.TeleBot(heroku_token)
 mgr = owm.weather_manager()
-token = os.environ.get('BOT_TOKEN')
+heroku_token = os.environ.get('BOT_TOKEN')
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
