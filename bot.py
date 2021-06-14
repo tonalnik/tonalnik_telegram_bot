@@ -1,4 +1,4 @@
-from romb import *
+#from romb import *
 import telebot
 import pyowm
 import time
@@ -111,7 +111,7 @@ def weather(message):
     except pyowm.commons.exceptions.NotFoundError:
         bot.send_message(message.chat.id, 'Ошибка, город не найден')
 
-
+'''
 def teleromb(message):
     v = int(message.text)
     a = [1, 2, 3, 4, 5]
@@ -121,5 +121,6 @@ def teleromb(message):
             bot.send_message(message.chat.id, str(a))
     else:
         bot.send_message(message.chat.id, 'Введите число больше нуля!')
+'''
 
 bot.polling(none_stop=True)

@@ -1,0 +1,4 @@
+telebot
+pyowm
+time
+json
