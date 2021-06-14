@@ -80,7 +80,7 @@ def send_text(message):
         bot.send_message(message.chat.id, "Добрый вечер, Аня!")
         bot.send_photo(message.chat.id, 'https://sun9-53.userapi.com/impg/c854020/v854020732/19b4ab/KtzKtJLWu1g.jpg?size=320x240&quality=96&sign=5f875cc985e2663adff82609d940ebcc&type=album')
 
-    elif text == 'спокойной ночи, данил' or text == 'спокойной ночи данил':
+    elif text == 'спокойной ночи, данил' or text == 'спокойной ночи данил' or text == 'доброй ночи, данил' or text == 'доброй ночи данил':
         bot.send_message(message.chat.id, "Спокойной ночи, Аня!")
         bot.send_photo(message.chat.id, 'https://pbs.twimg.com/media/D7k6y5gXsAEKoIW.jpg')
 
