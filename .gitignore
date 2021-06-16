@@ -1,1 +1,8 @@
 telegram_token.json
+fails.log
+start.bat
+test.py
+weather.ph
+/.vs
+/.dist
+/_pycache_

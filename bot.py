@@ -64,6 +64,7 @@ def send_text(message):
             bot.send_message(message.chat.id, i)
         answer = 'fuck fuck фак? 1000-7 ? что ахахах что ыт сказал ? 993 хавфвхавахыфывах xDxd wtF ) ghoul ghoul m0d aktivейтеdx d[d[d[­[фыуа хвхваыххав ых fuckckck kzxxdd вас никто не слы? что ? хваыхфывахыва XD)DD) fuck fuck fcuk s;s;s;s;s;s;s; pf44f4f4f 3p33p3p shi1ttt dldldldldldl sslslsl wanna d1e? doldldld die die1 die? dopdodododpdp fudk ghoul ghoul/ / / /sghhkhhkhklhk ,. . .. . . . .3p3p3pp3p3 sssssssss я... гуль XD)D)D)D fuck fcu k lobby lobyy king 6k main 4250 smurf fuck fuck fuck ты хочешь сыграть лобак? ты же и mинуты не простоишь ? cht о ахавыхфх wTF fuc kfcu klds;.s;s;; you wanna ? play? l00000000BY? ? ? ? ?? ? ? . . . 19000 - 7-777 7-07 -7-7 -7- 70 1 0 9 9 9 393 933? ?339 3 93 93 3 тату на лбу dead ins1de damn bro wtf sosklslslslsks kfuic fuck sorrry sorry sorry ,. ,. ,. . sorry . .. ,,34, shititititti tiktigikgik kfuckfucfkcukfufs 100-70 -7 070 7-1 1010 101 -7- 70 ssiiei syкa маtемати4kf pft,fkf ghjcnj cerf pft,fkf Z [JXE EVTHTNM GJVJUBNT GJVJUBNT FGPSFAP[D[ASDF[ASDF[ADF 4kdkddkdk djdkfkfid wannf die lddl wanna die wannadied kdkadjkdkae 3annwadie wanna aDE1'
         bot.send_message(message.chat.id, answer)
+
     elif text == 'ромб' or text == 'romb':
         bot.send_message(message.chat.id, 'Введите сторону ромба: ')
         bot.register_next_step_handler(message, teleromb)
@@ -99,9 +100,12 @@ def send_text(message):
     else:
         answer = 'Я тебя не понял!'
         bot.send_message(message.chat.id, answer)
+
+        '''
         if len(text) < 100:
             f.write(str(f_name) + " " + str(l_name) + " | " + text + "\n")
         f.close()
+        '''
 
 def weather(message):
     try:
